@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Helloworld-Angular-App'; 
-  logoUrl = 'assets/BL_logo_square.jpg';
+  userName: string = '';
 
-  // Function to open BridgeLabz website in a new tab
-  openBridgeLabzSite() {
-    window.open('https://www.bridgelabz.com', '_blank');
-  }
+  
 }
