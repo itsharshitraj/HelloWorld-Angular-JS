@@ -1,7 +1,16 @@
 <div>
     <label for="name">Enter your name: </label>
-    <input type="text" id="name" [(ngModel)]="userName" placeholder="Your name here" />
+    <input type="text"
+     id="name"
+      [(ngModel)]="userName" 
+      (input)="validateName()"
+      placeholder="Your name here" 
+      />
     
-    <h2>Hello from BridgeLabz, {{ userName }}!</h2>
+      <h2 *ngIf="showGreeting"> Hello from BridgeLabz, {{ userName }}!</h2>
+    
+      <!-- Show error message if input is invalid -->
+      <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+    
   </div>
   
