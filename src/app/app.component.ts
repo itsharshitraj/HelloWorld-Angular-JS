@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Helloworld-Angular-App';
-  message: string = 'Hello from BridgeLabz'; 
-  logoUrl: string = 'assets/BL_logo_square.jpg';
+  title = 'Helloworld-Angular-App'; 
+  logoUrl = 'assets/BL_logo_square.jpg';
+
+  // Function to open BridgeLabz website in a new tab
+  openBridgeLabzSite() {
+    window.open('https://www.bridgelabz.com', '_blank');
+  }
 }
