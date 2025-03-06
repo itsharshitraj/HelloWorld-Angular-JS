@@ -10,4 +10,5 @@ import { HelloWorldComponent } from "./hello-world/hello-world.component";
 })
 export class AppComponent {
   title = 'Helloworld-Angular-App';
+  message: string = 'Hello from BridgeLabz'; // Variable for Interpolation
 }
